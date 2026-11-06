@@ -1,0 +1,71 @@
+{
+  "app": "Nihongo Study Deck",
+  "version": "19.0.0-foundation",
+  "automatedTests": {
+    "javascriptSyntax": {
+      "status": "PASS",
+      "scope": "All assets/js/legacy/*.js, assets/js/v19/*.js, and service-worker.js checked with Node.js --check",
+      "filesChecked": 17
+    },
+    "nodeTestSuite": {
+      "status": "PASS",
+      "passed": 11,
+      "failed": 0,
+      "skipped": 0,
+      "coverage": [
+        "V18.7 dataset counts",
+        "Exact-only vocabulary matching integrity",
+        "Vocabulary and reading structural integrity",
+        "Unmatched vocabulary review queue",
+        "Kanji and grammar review status",
+        "SRS Again/Hard/Good/Easy scheduling",
+        "SRS interval progression and mastered state",
+        "Invalid SRS rating rejection"
+      ]
+    },
+    "packageValidator": {
+      "status": "PASS",
+      "checks": 12,
+      "failed": 0,
+      "coverage": [
+        "Generated runtime index exists",
+        "Vocabulary schema and unique IDs",
+        "Reading IDs and question structure",
+        "JSON dataset parsing",
+        "HTML ID uniqueness",
+        "Local script and asset references",
+        "V19 module presence",
+        "Service worker pre-cache resources",
+        "PWA manifest parsing",
+        "No destructive storage clear/delete calls"
+      ]
+    },
+    "databaseAudit": {
+      "status": "PASS_STRUCTURAL_ONLY",
+      "vocabularyRecords": 1205,
+      "readingPassages": 950,
+      "legacyReadingPassages": 6,
+      "readingVocabularyReferences": 3330,
+      "exactMatchedReferences": 2351,
+      "unmatchedReferences": 979,
+      "vocabularyWithValidJapaneseTranslationExamplePairs": 178,
+      "invalidReadingQuestionStructures": 0,
+      "duplicateVocabularyIds": 0,
+      "duplicateReadingIds": 0
+    }
+  },
+  "notTested": [
+    "Interactive browser end-to-end flows",
+    "Real Android device layout and touch behavior",
+    "PWA installation/update flow on HTTPS hosting",
+    "Offline relaunch after initial service-worker cache population",
+    "Actual V18.7 browser-profile data migration and rollback",
+    "Human linguistic review of Japanese vocabulary, grammar, kanji, and reading content",
+    "Audio playback quality across Android browsers"
+  ],
+  "limitations": [
+    "A static test pass does not prove that every UI interaction works at runtime.",
+    "No content was promoted to Verified by automated checks.",
+    "The 979 unmatched vocabulary references intentionally remain unmatched until reviewed or given a reliable morphological mapping."
+  ]
+}

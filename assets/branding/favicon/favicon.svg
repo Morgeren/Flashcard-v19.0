@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Countryside Book favicon">
+ <rect width="64" height="64" rx="13" fill="#F5F0E4"/>
+ <path d="M10 28 L24 14 L32 23 L41 12 L55 28 V40 H10Z" fill="#829F65"/>
+ <path d="M28 18 L41 12 L49 21 L43 19 L40 22 L36 18 L32 22Z" fill="#F7F6EF"/>
+ <path d="M19 30 L32 22 L46 30 V39 H19Z" fill="#D8B88C" stroke="#705343" stroke-width="2"/>
+ <path d="M16 30 L32 19 L49 30 L45 32 L32 24 L20 32Z" fill="#344B3A"/>
+ <path d="M6 39 Q18 33 31 41 Q45 33 58 39 L57 53 Q44 49 32 57 Q19 49 7 53Z" fill="#506D53"/>
+ <path d="M8 39 Q20 35 30 42 V53 Q19 47 8 51Z M34 42 Q45 35 56 39 V51 Q45 47 34 53Z" fill="#FFF9E9" stroke="#C8AD82" stroke-width="1.4"/>
+ <path d="M32 42 V55" stroke="#A98261" stroke-width="2" stroke-linecap="round"/>
+</svg>

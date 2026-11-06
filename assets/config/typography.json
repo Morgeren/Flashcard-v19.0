@@ -1,0 +1,81 @@
+{
+  "project": "Nihongo Study Deck V19.1",
+  "status": "prepared_for_review_not_integrated",
+  "fontFamilies": {
+    "ui": {
+      "cssFamily": "Noto Sans JP",
+      "sourceFamily": "Noto Sans CJK JP",
+      "role": "All UI, navigation, labels, buttons, vocabulary, kanji, grammar, flashcards, quizzes and settings.",
+      "availableWeights": [
+        400,
+        700
+      ],
+      "note": "Only genuine static 400 and 700 files were present in the source distribution; no synthetic 500/600 font files were created."
+    },
+    "reading": {
+      "cssFamily": "Noto Serif JP",
+      "sourceFamily": "Noto Serif CJK JP",
+      "role": "Reading passages, stories, articles and long-form Japanese text.",
+      "availableWeights": [
+        400
+      ],
+      "defaultWeight": 400,
+      "note": "Only genuine Regular 400 is packaged for Reading; a Serif bold file was omitted to keep the reading font subset compact."
+    }
+  },
+  "fallbacks": {
+    "ui": [
+      "Noto Sans CJK JP",
+      "system-ui",
+      "sans-serif"
+    ],
+    "reading": [
+      "Noto Serif CJK JP",
+      "Noto Sans JP",
+      "serif"
+    ],
+    "emoji": [
+      "system-ui",
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Noto Color Emoji"
+    ]
+  },
+  "scalePx": {
+    "display": 28,
+    "h1": 24,
+    "h2": 20,
+    "h3": 17,
+    "body-large": 16,
+    "body": 14,
+    "body-small": 13,
+    "caption": 12,
+    "micro": 11
+  },
+  "reading": {
+    "fontSizePx": 18,
+    "lineHeight": 2.0,
+    "paragraphSpacing": "1em",
+    "writingMode": "horizontal-tb"
+  },
+  "loading": {
+    "localOnly": true,
+    "display": "swap",
+    "uiFont": "load on app shell",
+    "readingFont": "load when Reader/Reading view needs it",
+    "serviceWorker": "precache font assets in a future integration phase; service worker not changed here"
+  },
+  "coverage": {
+    "auditedUniqueCodepoints": 1169,
+    "auditedKanjiIndexEntries": 801,
+    "supportedScope": "Supplied V19.0 corpus + V19.1 wireframe + sample text only",
+    "futureContent": "Regenerate Japanese core/extended subsets for new content outside the audited codepoint set."
+  },
+  "assetStrategy": {
+    "latin": "Latin and punctuation subset",
+    "japanese-core": "Full hiragana/katakana blocks, JP punctuation and audited kanji index",
+    "japanese-extended": "Additional Japanese codepoints in the audited content outside the 801-entry index and kana/punctuation blocks",
+    "symbols": "Additional source symbols supported by the font cmap; unsupported pictographs use platform fallback"
+  },
+  "integration": "Documentation/reference only; no application HTML, CSS, JS, manifest or service worker changed."
+}

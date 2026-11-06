@@ -1,0 +1,2 @@
+Copyright © 2014-2021 Adobe (http://www.adobe.com/).
+Source face family: Noto Sans CJK JP 2.004.

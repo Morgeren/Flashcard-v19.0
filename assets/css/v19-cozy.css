@@ -1,0 +1,137 @@
+/* Nihongo Study Deck V19.1 — Cozy Japanese Countryside UI integration layer.
+   Legacy variables remain intact; this file maps them to --season-* aliases. */
+:root{
+  --season-primary:#506D53;--season-primary-hover:#405A43;--season-secondary:#A9BD91;--season-accent:#E8B7BD;
+  --season-background:#F5F0E4;--season-surface:#FFFCF5;--season-surface-secondary:#F2E9E8;
+  --season-text-primary:#353B32;--season-text-secondary:#646A60;--season-border:#DED8C9;
+  --season-success:#2F6B4F;--season-warning:#79530F;--season-error:#A13F3F;--season-on-primary:#FFFCF5;
+  --season-on-secondary:#243326;--season-on-accent:#353B32;--season-focus-ring:#405A43;--season-disabled:#E4DED1;
+  --season-on-disabled:#5E6259;--season-overlay:#353B3280;
+}
+html.light-theme{
+  --bg:var(--season-background);--panel:var(--season-surface);--panel2:var(--season-surface-secondary);
+  --line:var(--season-border);--text:var(--season-text-primary);--muted:var(--season-text-secondary);
+  --accent:var(--season-primary);--accent2:var(--season-accent);--good:var(--season-success);
+  --warn:var(--season-warning);--bad:var(--season-error);--v3-accent:var(--season-primary);
+  --v3-accent-ink:var(--season-on-primary);--v3-card:var(--season-surface);--v3-border:var(--season-border);
+  color-scheme:light;
+}
+html.dark-theme{
+  --bg:var(--season-background);--panel:var(--season-surface);--panel2:var(--season-surface-secondary);
+  --line:var(--season-border);--text:var(--season-text-primary);--muted:var(--season-text-secondary);
+  --accent:var(--season-primary);--accent2:var(--season-accent);--good:var(--season-success);
+  --warn:var(--season-warning);--bad:var(--season-error);--v3-accent:var(--season-secondary);
+  --v3-accent-ink:var(--season-on-secondary);--v3-card:var(--season-surface);--v3-border:var(--season-border);
+  color-scheme:dark;
+}
+html,body{min-height:100%;background:var(--bg);color:var(--text)}
+body{font-family:var(--font-ui,"Noto Sans JP",system-ui,sans-serif);line-height:1.62;background:var(--bg)}
+.app{max-width:1080px;padding:14px 16px calc(112px + env(safe-area-inset-bottom));}
+.topbar{align-items:center;gap:12px;margin-bottom:12px}
+.brand{display:flex;align-items:center;gap:11px;min-width:0}
+.brand h1{font-family:var(--font-ui,"Noto Sans JP",sans-serif);font-size:1.06rem;line-height:1.25;letter-spacing:-.02em;margin:0;color:var(--text)}
+.brand p{font-size:.76rem;margin:3px 0 0;color:var(--muted)}
+.v19-brand-icon{width:46px;height:46px;border-radius:14px;object-fit:cover;flex:none;box-shadow:0 3px 12px #2635251a}
+.v19-brand-copy{min-width:0}
+.v19-header-tools{display:flex;align-items:center;gap:8px;margin-left:auto}
+.v19-header-tools button{min-height:42px;min-width:42px;padding:8px 11px}
+.v19-settings-trigger{width:44px;height:44px;display:grid;place-items:center;font-size:1.12rem}
+.v19-bottom-nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;padding:6px;margin:0 0 15px;background:var(--panel);border:1px solid var(--line);border-radius:17px;box-shadow:0 8px 24px #293c2910;position:sticky;top:5px;z-index:18}
+.v19-bottom-nav button{display:flex;align-items:center;justify-content:center;flex-direction:row;gap:8px;min-height:46px;padding:8px 10px;background:transparent;border-color:transparent;color:var(--muted);font-size:.84rem;font-weight:700;border-radius:12px}
+.v19-bottom-nav button[aria-current="page"]{background:var(--season-primary);border-color:var(--season-primary);color:var(--season-on-primary)}
+.v19-bottom-nav .nav-symbol{font-size:1.08rem;line-height:1}
+.v19-bottom-nav button:focus-visible,.v19-settings-trigger:focus-visible{outline:3px solid var(--season-focus-ring);outline-offset:2px}
+.v19-hub,.v19-settings-view{padding:0 0 14px;min-width:0}
+.v19-hub-head{margin:4px 1px 13px}
+.v19-eyebrow{font-size:.69rem;letter-spacing:.13em;text-transform:uppercase;color:var(--season-primary);font-weight:800;margin:0 0 4px}
+.v19-hub-title{font-family:var(--font-ui,"Noto Sans JP",sans-serif);font-size:clamp(1.45rem,4vw,1.9rem);line-height:1.2;letter-spacing:-.035em;margin:0 0 5px;color:var(--text)}
+.v19-hub-subtitle{font-size:.9rem;color:var(--muted);margin:0;max-width:650px}
+.v19-season-hero{position:relative;overflow:hidden;border-radius:22px;background:var(--season-surface-secondary);border:1px solid var(--line);height:clamp(250px,82vw,390px);max-height:390px;margin:12px 0 15px;isolation:isolate}
+.v19-season-hero img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 53%;}
+.v19-season-hero:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(180deg,transparent,rgba(24,34,27,.64));z-index:1;pointer-events:none}
+.v19-season-caption{position:absolute;z-index:2;left:17px;right:17px;bottom:16px;color:#fffdf3;text-shadow:0 2px 8px #18251c9c}
+.v19-season-caption .season-kana{font-family:var(--font-reading,serif);font-size:1.05rem;letter-spacing:.12em}
+.v19-season-caption strong{display:block;font-size:1.12rem;line-height:1.35}
+.v19-season-caption small{display:block;font-size:.75rem;opacity:.94;margin-top:2px}
+.v19-hub-section{margin:16px 0}
+.v19-hub-section-title{font-size:1rem;font-weight:800;margin:0 0 8px}
+.v19-card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.v19-action-card{display:flex;align-items:center;gap:12px;text-align:left;width:100%;min-height:78px;padding:13px;background:var(--panel);border:1px solid var(--line);border-radius:16px;color:var(--text);box-shadow:0 3px 12px #2836280a}
+.v19-action-card:hover{background:var(--season-surface-secondary);border-color:var(--season-border-strong)}
+.v19-action-icon{width:43px;height:43px;border-radius:13px;display:grid;place-items:center;flex:none;background:var(--season-surface-secondary);color:var(--season-primary);font-size:1.15rem}
+.v19-action-copy{min-width:0;flex:1}
+.v19-action-copy strong{display:block;font-size:.88rem;line-height:1.35}
+.v19-action-copy small{display:block;font-size:.73rem;color:var(--muted);line-height:1.4;margin-top:3px}
+.v19-action-arrow{color:var(--season-primary);font-size:1.15rem;margin-left:auto}
+.v19-study-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(130px,34%);overflow:hidden;border-radius:20px;border:1px solid var(--line);background:var(--panel);margin:12px 0 17px;min-height:168px}
+.v19-study-hero-copy{padding:17px 15px;align-self:center}
+.v19-study-hero-copy strong{display:block;font-size:1rem;line-height:1.35}
+.v19-study-hero-copy p{font-size:.78rem;color:var(--muted);margin:5px 0 0}
+.v19-study-hero img{width:100%;height:100%;min-height:168px;object-fit:cover;object-position:center 52%}
+.v19-library-search{display:flex;gap:8px;align-items:stretch;margin:14px 0 10px}
+.v19-library-search input{flex:1;min-width:0;min-height:48px;padding:10px 13px;border:1px solid var(--line);border-radius:13px;background:var(--panel);color:var(--text)}
+.v19-library-search button{min-height:48px;white-space:nowrap;background:var(--season-primary);border-color:var(--season-primary);color:var(--season-on-primary)}
+.v19-library-results{display:grid;gap:7px;margin:10px 0}
+.v19-library-result{display:flex;align-items:center;justify-content:space-between;text-align:left;gap:12px;width:100%;padding:11px 13px;background:var(--panel);border:1px solid var(--line);border-radius:12px;color:var(--text)}
+.v19-library-result strong{font-family:var(--font-ui,"Noto Sans JP",sans-serif);font-size:1rem}
+.v19-library-result small{display:block;color:var(--muted);font-size:.76rem;margin-top:2px}
+.v19-library-empty,.v19-empty-state{display:flex;align-items:center;gap:14px;padding:15px;margin:11px 0;border:1px dashed var(--line);border-radius:16px;background:var(--panel)}
+.v19-library-empty img,.v19-empty-state img{width:94px;height:94px;object-fit:contain;flex:none}
+.v19-library-empty strong,.v19-empty-state strong{display:block;font-size:.9rem}
+.v19-library-empty p,.v19-empty-state p{font-size:.77rem;color:var(--muted);margin:4px 0 0}
+.v19-settings-view{border:1px solid var(--line);border-radius:18px;background:var(--panel);padding:16px}
+.v19-settings-header{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.v19-settings-header button{min-width:42px;min-height:42px}
+.v19-settings-header h2{font-size:1.15rem;margin:0}
+.v19-settings-section{border-top:1px solid var(--line);padding:14px 0}
+.v19-settings-section h3{font-size:.92rem;margin:0 0 7px}
+.v19-settings-section p{font-size:.78rem;color:var(--muted);margin:5px 0}
+.v19-settings-view .v187-data-panel{margin-top:10px}
+.v19-settings-view .v187-utility{display:flex;justify-content:flex-start;margin:0;gap:8px;flex-wrap:wrap}
+.v19-settings-view .v187-utility button{min-height:44px}
+.v19-settings-view .v13-settings{max-width:620px}
+.v19-settings-view .v13-settings .field{min-width:0}
+.v19-reading-type,#v11Japanese,#v11Furigana,#v11Translation,#v11Vocab,#v11Grammar,.v11-furigana-box,.v10-passage,.passage{font-family:var(--font-reading,"Noto Serif JP",serif);font-size:1.08rem;line-height:2}
+#v11Japanese,#v11Furigana{letter-spacing:.015em;word-break:normal;overflow-wrap:anywhere}
+.v10-passage{line-height:2.05}
+.v13-panel,.v13-card,.v10-panel-card,.v10-question-card,.v186-panel,.v186-study-card,.v187-data-panel,.panel,.metric,.toolbar,.card-wrap{border-color:var(--line)!important;box-shadow:none!important}
+.light-theme .panel,.light-theme .metric,.light-theme .card-wrap,.light-theme .toolbar,.light-theme .v13-card,.light-theme .v10-panel-card,.light-theme .v10-question-card,.light-theme .v186-study-card{background:var(--panel)!important;color:var(--text)}
+.light-theme .metric,.light-theme .mini-metric,.light-theme .v10-metric,.light-theme .v13-metric{background:var(--panel2)!important}
+.light-theme input[type=search],.light-theme input[type=text],.light-theme select,.light-theme textarea{background:var(--panel)!important;color:var(--text)!important;border-color:var(--line)!important}
+.light-theme button.primary,.light-theme .v10-tabs button[aria-pressed="true"],.light-theme .v19-library-search button{background:var(--season-primary)!important;color:var(--season-on-primary)!important;border-color:var(--season-primary)!important}
+.dark-theme .panel,.dark-theme .metric,.dark-theme .card-wrap,.dark-theme .toolbar,.dark-theme .v13-card,.dark-theme .v10-panel-card,.dark-theme .v10-question-card,.dark-theme .v186-study-card{background:var(--panel)!important;color:var(--text)}
+.dark-theme .v19-action-card,.dark-theme .v19-library-result,.dark-theme .v19-settings-view{background:var(--panel)}
+.dark-theme button.primary,.dark-theme .v10-tabs button[aria-pressed="true"],.dark-theme .v19-library-search button{background:var(--season-primary)!important;color:var(--season-on-primary)!important;border-color:var(--season-primary)!important}
+.light-theme .v13-hero,.light-theme .v13-note,.light-theme .v13-breakdown{background:var(--season-surface-secondary);border-color:var(--line);color:var(--text)}
+.dark-theme .v13-hero,.dark-theme .v13-note,.dark-theme .v13-breakdown{background:var(--season-surface-secondary);border-color:var(--line);color:var(--text)}
+.v19-action-card:focus-visible,.v19-library-result:focus-visible,.v19-bottom-nav button:focus-visible{outline:3px solid var(--season-focus-ring);outline-offset:2px}
+.v19-bottom-nav button,.v19-action-card,.v19-settings-trigger{touch-action:manipulation}
+.v19-bottom-nav[hidden],.v19-hub[hidden],.v19-settings-view[hidden]{display:none!important}
+@media(max-width:760px){
+ .app{padding:12px 11px calc(115px + env(safe-area-inset-bottom))}
+ .topbar{align-items:center;margin-bottom:11px}
+ .v19-bottom-nav{position:fixed;left:8px;right:8px;bottom:calc(6px + env(safe-area-inset-bottom));top:auto;margin:0;padding:5px;gap:3px;border-radius:16px;background:color-mix(in srgb,var(--panel) 95%,transparent);backdrop-filter:blur(14px);box-shadow:0 5px 22px #1a261b20;z-index:30}
+ .v19-bottom-nav button{flex-direction:column;gap:3px;min-height:52px;padding:5px 2px;font-size:.69rem}
+ .v19-bottom-nav .nav-symbol{font-size:1.08rem}
+ .v19-season-hero{height:clamp(260px,90vw,360px);margin-top:10px}
+ .v19-card-grid{grid-template-columns:1fr}
+ .v19-study-hero{grid-template-columns:minmax(0,1fr) 34%;min-height:155px}
+ .v19-study-hero img{min-height:155px}
+ .v19-library-search{flex-direction:column}
+ .v19-library-search button{width:100%}
+ .v19-library-empty,.v19-empty-state{align-items:center}
+ body[data-v19-focus="true"] .v19-bottom-nav{display:none}
+ .app{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
+}
+@media(max-width:360px){.v19-brand-icon{width:40px;height:40px}.brand h1{font-size:.96rem}.v19-bottom-nav button{font-size:.64rem}.v19-library-empty img,.v19-empty-state img{width:76px;height:76px}}
+@media(min-width:761px){.v19-bottom-nav{position:sticky;top:5px}.v19-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(prefers-reduced-motion:reduce){.v19-bottom-nav,.v19-action-card,.v19-season-hero{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+.v19-library-detail{padding:15px;border:1px solid var(--line);border-radius:16px;background:var(--panel)}
+.v19-library-detail-word{font-size:2rem;line-height:1.35;margin:4px 0;color:var(--text)}
+.v19-library-detail-reading{font-family:var(--font-reading,serif);font-size:1.05rem;color:var(--season-primary);margin:2px 0 8px}
+.v19-library-detail-meaning{font-size:1rem;margin:0 0 12px}
+.v19-library-detail-example{padding:11px 12px;border-left:3px solid var(--season-accent);background:var(--season-surface-secondary);border-radius:0 11px 11px 0}
+.v19-library-detail-example p{font-size:.82rem;color:var(--muted);margin:4px 0 0}
+.v19-library-detail-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}
+.v19-library-detail-actions button{min-height:44px}
+.light-theme .v19-bottom-nav button,.light-theme .v19-action-card,.light-theme .v19-settings-view button,.light-theme .v19-library-result{background:var(--season-surface-secondary);color:var(--text);border-color:var(--line)}

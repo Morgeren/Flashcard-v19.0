@@ -1,0 +1,563 @@
+{
+  "schemaVersion": "1.0.0",
+  "application": "Nihongo Study Deck V19.1",
+  "status": "prepared_for_review_not_integrated",
+  "concept": "Cozy Japanese Countryside — Four Seasons",
+  "themeSystem": {
+    "mode": "automatic",
+    "timezone": "Asia/Tokyo",
+    "calendar": "gregorian-month-boundaries",
+    "manualSeasonOverride": false,
+    "schedule": {
+      "reference": "Japanese seasonal product calendar",
+      "seasons": {
+        "spring": {
+          "start": {
+            "month": 3,
+            "day": 1
+          },
+          "end": {
+            "month": 5,
+            "day": 31
+          }
+        },
+        "summer": {
+          "start": {
+            "month": 6,
+            "day": 1
+          },
+          "end": {
+            "month": 8,
+            "day": 31
+          }
+        },
+        "autumn": {
+          "start": {
+            "month": 9,
+            "day": 1
+          },
+          "end": {
+            "month": 11,
+            "day": 30
+          }
+        },
+        "winter": {
+          "start": {
+            "month": 12,
+            "day": 1
+          },
+          "end": {
+            "month": 2,
+            "day": "last"
+          }
+        }
+      },
+      "leapYearHandling": "Winter ends on February 28 in common years and February 29 in leap years; the following day belongs to Spring."
+    },
+    "fallbackSeason": null,
+    "dateSource": "Use the current instant converted to Asia/Tokyo before reading its calendar month and day.",
+    "boundaryBehavior": "If the app remains open across a seasonal boundary, re-evaluate when it becomes visible or active again.",
+    "fallbackBehavior": "If the current instant cannot be converted to Asia/Tokyo, use the permanent brand foundation and do not apply a guessed seasonal override.",
+    "appearanceMode": {
+      "source": "existing saved studyPrefs.theme preference from V19.0",
+      "supportedModes": [
+        "light",
+        "dark"
+      ],
+      "preserveUserPreference": true,
+      "seasonalThemeDoesNotOverrideAppearanceMode": true,
+      "seasonalAccentsApplyInBothModes": true,
+      "manualSeasonSelector": false
+    }
+  },
+  "transition": {
+    "enabled": true,
+    "durationMs": 900,
+    "easing": "ease-in-out",
+    "reducedMotionDurationMs": 0,
+    "reducedMotionMediaQuery": "(prefers-reduced-motion: reduce)",
+    "updateTriggers": [
+      "application-start",
+      "visibility-resume",
+      "calendar-date-recheck"
+    ],
+    "animatedProperties": [
+      "color",
+      "background-color",
+      "border-color",
+      "fill",
+      "stroke"
+    ],
+    "preserveActiveLearningState": true,
+    "requiresPageReload": false,
+    "implementationStatus": "configuration_only_not_implemented"
+  },
+  "brand": {
+    "background": "#F5F0E4",
+    "surface": "#FFFCF5",
+    "textPrimary": "#353B32",
+    "textSecondaryReference": "#777B6E",
+    "textSecondaryAccessible": "#646A60",
+    "primaryBrand": "#506D53",
+    "sage": "#A8B89A",
+    "naturalWood": "#D8B88C",
+    "softRose": "#D5A59A",
+    "icon": "Countryside Book",
+    "seasonIndependent": true,
+    "notes": [
+      "Warm Cream and Surface White remain the permanent light-mode foundation.",
+      "The Countryside Book app icon and typography do not change with the season.",
+      "The original muted brand reference #777B6E is retained as brand metadata; the accessible semantic text-secondary token is darkened to #646A60 for normal text on Warm Cream."
+    ]
+  },
+  "accessibility": {
+    "standard": "WCAG 2.2 contrast calculation using relative luminance",
+    "normalTextMinimum": 4.5,
+    "largeTextMinimum": 3.0,
+    "nonTextUiMinimum": 3.0,
+    "validationScope": "Configured semantic foreground/background pairings only; final component-level testing remains required after integration.",
+    "statusMeaningIsSeasonInvariant": true,
+    "doNotUseColorAsOnlyStatusSignal": true
+  },
+  "cssBinding": {
+    "prefix": "--season-",
+    "mapping": {
+      "primary": "--season-primary",
+      "primary-hover": "--season-primary-hover",
+      "secondary": "--season-secondary",
+      "accent": "--season-accent",
+      "background": "--season-background",
+      "surface": "--season-surface",
+      "surface-secondary": "--season-surface-secondary",
+      "text-primary": "--season-text-primary",
+      "text-secondary": "--season-text-secondary",
+      "border": "--season-border",
+      "border-strong": "--season-border-strong",
+      "success": "--season-success",
+      "warning": "--season-warning",
+      "error": "--season-error",
+      "on-primary": "--season-on-primary",
+      "on-secondary": "--season-on-secondary",
+      "on-accent": "--season-on-accent",
+      "focus-ring": "--season-focus-ring",
+      "disabled": "--season-disabled",
+      "on-disabled": "--season-on-disabled",
+      "overlay": "--season-overlay"
+    },
+    "integrationNote": "These are proposed V19.1 semantic aliases. Do not bind them directly to V19.0 legacy variables until the UI integration phase."
+  },
+  "seasons": {
+    "spring": {
+      "label": "Spring",
+      "japanese": "春",
+      "romaji": "Haru",
+      "period": "March–May",
+      "dateRange": {
+        "startMonth": 3,
+        "endMonth": 5
+      },
+      "atmosphere": [
+        "fresh",
+        "gentle",
+        "light",
+        "peaceful"
+      ],
+      "assets": {
+        "home": "home/spring/home_spring_mobile.webp",
+        "studyRoom": "study-room/spring/study_room_spring_mobile.webp"
+      },
+      "colorModes": {
+        "light": {
+          "tokens": {
+            "primary": "#506D53",
+            "primary-hover": "#405A43",
+            "secondary": "#A9BD91",
+            "accent": "#E8B7BD",
+            "background": "#F5F0E4",
+            "surface": "#FFFCF5",
+            "surface-secondary": "#F2E9E8",
+            "text-primary": "#353B32",
+            "text-secondary": "#646A60",
+            "border": "#DED8C9",
+            "border-strong": "#8E897D",
+            "success": "#2F6B4F",
+            "warning": "#79530F",
+            "error": "#A13F3F",
+            "on-primary": "#FFFCF5",
+            "on-secondary": "#243326",
+            "on-accent": "#353B32",
+            "focus-ring": "#405A43",
+            "disabled": "#E4DED1",
+            "on-disabled": "#5E6259",
+            "overlay": "#353B3280",
+            "success-surface": "#E6F0E7",
+            "warning-surface": "#F5ECD8",
+            "error-surface": "#F6E4E2",
+            "on-success-surface": "#254C37",
+            "on-warning-surface": "#5A3D0B",
+            "on-error-surface": "#7D3030"
+          }
+        },
+        "dark": {
+          "tokens": {
+            "primary": "#A8C79C",
+            "primary-hover": "#BAD5AF",
+            "secondary": "#405A43",
+            "accent": "#E8B7BD",
+            "background": "#242825",
+            "surface": "#2D322E",
+            "surface-secondary": "#353B36",
+            "text-primary": "#E8ECE7",
+            "text-secondary": "#B8C0B8",
+            "border": "#484F49",
+            "border-strong": "#748278",
+            "success": "#A4D4B7",
+            "warning": "#E5C58C",
+            "error": "#EFAAA5",
+            "on-primary": "#1D2B20",
+            "on-secondary": "#F5F0E4",
+            "on-accent": "#353B32",
+            "focus-ring": "#BAD5AF",
+            "disabled": "#3C423D",
+            "on-disabled": "#B8C0B8",
+            "overlay": "#00000080",
+            "success-surface": "#30443A",
+            "warning-surface": "#4A4030",
+            "error-surface": "#4A3434",
+            "on-success-surface": "#CDE8D5",
+            "on-warning-surface": "#F0D7A8",
+            "on-error-surface": "#F3C6C0"
+          }
+        }
+      },
+      "contrastValidation": {
+        "report": "documentation/contrast_report.csv",
+        "status": "PASS",
+        "scope": "configured semantic pairings for both light and dark modes"
+      },
+      "assetSpecs": {
+        "home": {
+          "width": 1080,
+          "height": 1350,
+          "format": "WEBP",
+          "fileSizeBytes": 346730
+        },
+        "studyRoom": {
+          "width": 1080,
+          "height": 1350,
+          "format": "WEBP",
+          "fileSizeBytes": 240248
+        }
+      }
+    },
+    "summer": {
+      "label": "Summer",
+      "japanese": "夏",
+      "romaji": "Natsu",
+      "period": "June–August",
+      "dateRange": {
+        "startMonth": 6,
+        "endMonth": 8
+      },
+      "atmosphere": [
+        "bright",
+        "lively",
+        "fresh",
+        "natural"
+      ],
+      "assets": {
+        "home": "home/summer/home_summer_mobile.webp",
+        "studyRoom": "study-room/summer/study_room_summer_mobile.webp"
+      },
+      "colorModes": {
+        "light": {
+          "tokens": {
+            "primary": "#425D4A",
+            "primary-hover": "#354C3B",
+            "secondary": "#829F65",
+            "accent": "#92BBD5",
+            "background": "#F5F0E4",
+            "surface": "#FFFCF5",
+            "surface-secondary": "#E9F0EC",
+            "text-primary": "#353B32",
+            "text-secondary": "#646A60",
+            "border": "#DED8C9",
+            "border-strong": "#8E897D",
+            "success": "#2F6B4F",
+            "warning": "#79530F",
+            "error": "#A13F3F",
+            "on-primary": "#FFFCF5",
+            "on-secondary": "#1F2D1D",
+            "on-accent": "#26333A",
+            "focus-ring": "#354C3B",
+            "disabled": "#E4DED1",
+            "on-disabled": "#5E6259",
+            "overlay": "#353B3280",
+            "success-surface": "#E6F0E7",
+            "warning-surface": "#F5ECD8",
+            "error-surface": "#F6E4E2",
+            "on-success-surface": "#254C37",
+            "on-warning-surface": "#5A3D0B",
+            "on-error-surface": "#7D3030"
+          }
+        },
+        "dark": {
+          "tokens": {
+            "primary": "#A7CDB6",
+            "primary-hover": "#BBDAC8",
+            "secondary": "#3F5C48",
+            "accent": "#92BBD5",
+            "background": "#242825",
+            "surface": "#2D322E",
+            "surface-secondary": "#353B36",
+            "text-primary": "#E8ECE7",
+            "text-secondary": "#B8C0B8",
+            "border": "#484F49",
+            "border-strong": "#748278",
+            "success": "#A4D4B7",
+            "warning": "#E5C58C",
+            "error": "#EFAAA5",
+            "on-primary": "#17251B",
+            "on-secondary": "#F5F0E4",
+            "on-accent": "#26333A",
+            "focus-ring": "#BBDAC8",
+            "disabled": "#3C423D",
+            "on-disabled": "#B8C0B8",
+            "overlay": "#00000080",
+            "success-surface": "#30443A",
+            "warning-surface": "#4A4030",
+            "error-surface": "#4A3434",
+            "on-success-surface": "#CDE8D5",
+            "on-warning-surface": "#F0D7A8",
+            "on-error-surface": "#F3C6C0"
+          }
+        }
+      },
+      "contrastValidation": {
+        "report": "documentation/contrast_report.csv",
+        "status": "PASS",
+        "scope": "configured semantic pairings for both light and dark modes"
+      },
+      "assetSpecs": {
+        "home": {
+          "width": 1080,
+          "height": 1350,
+          "format": "WEBP",
+          "fileSizeBytes": 335810
+        },
+        "studyRoom": {
+          "width": 1080,
+          "height": 1350,
+          "format": "WEBP",
+          "fileSizeBytes": 235384
+        }
+      }
+    },
+    "autumn": {
+      "label": "Autumn",
+      "japanese": "秋",
+      "romaji": "Aki",
+      "period": "September–November",
+      "dateRange": {
+        "startMonth": 9,
+        "endMonth": 11
+      },
+      "atmosphere": [
+        "warm",
+        "nostalgic",
+        "calm",
+        "mature"
+      ],
+      "assets": {
+        "home": "home/autumn/home_autumn_mobile.webp",
+        "studyRoom": "study-room/autumn/study_room_autumn_mobile.webp"
+      },
+      "colorModes": {
+        "light": {
+          "tokens": {
+            "primary": "#705343",
+            "primary-hover": "#5D4436",
+            "secondary": "#D5B477",
+            "accent": "#C77D50",
+            "background": "#F5F0E4",
+            "surface": "#FFFCF5",
+            "surface-secondary": "#F1E8DA",
+            "text-primary": "#353B32",
+            "text-secondary": "#646A60",
+            "border": "#DED8C9",
+            "border-strong": "#8E897D",
+            "success": "#2F6B4F",
+            "warning": "#79530F",
+            "error": "#A13F3F",
+            "on-primary": "#FFFCF5",
+            "on-secondary": "#382817",
+            "on-accent": "#211710",
+            "focus-ring": "#5D4436",
+            "disabled": "#E4DED1",
+            "on-disabled": "#5E6259",
+            "overlay": "#353B3280",
+            "success-surface": "#E6F0E7",
+            "warning-surface": "#F5ECD8",
+            "error-surface": "#F6E4E2",
+            "on-success-surface": "#254C37",
+            "on-warning-surface": "#5A3D0B",
+            "on-error-surface": "#7D3030"
+          }
+        },
+        "dark": {
+          "tokens": {
+            "primary": "#D5A77D",
+            "primary-hover": "#E2BA96",
+            "secondary": "#705343",
+            "accent": "#E4B18B",
+            "background": "#242825",
+            "surface": "#2D322E",
+            "surface-secondary": "#353B36",
+            "text-primary": "#E8ECE7",
+            "text-secondary": "#B8C0B8",
+            "border": "#484F49",
+            "border-strong": "#748278",
+            "success": "#A4D4B7",
+            "warning": "#E5C58C",
+            "error": "#EFAAA5",
+            "on-primary": "#2A1D14",
+            "on-secondary": "#F5F0E4",
+            "on-accent": "#2A1D14",
+            "focus-ring": "#E2BA96",
+            "disabled": "#3C423D",
+            "on-disabled": "#B8C0B8",
+            "overlay": "#00000080",
+            "success-surface": "#30443A",
+            "warning-surface": "#4A4030",
+            "error-surface": "#4A3434",
+            "on-success-surface": "#CDE8D5",
+            "on-warning-surface": "#F0D7A8",
+            "on-error-surface": "#F3C6C0"
+          }
+        }
+      },
+      "contrastValidation": {
+        "report": "documentation/contrast_report.csv",
+        "status": "PASS",
+        "scope": "configured semantic pairings for both light and dark modes"
+      },
+      "assetSpecs": {
+        "home": {
+          "width": 1080,
+          "height": 1350,
+          "format": "WEBP",
+          "fileSizeBytes": 290870
+        },
+        "studyRoom": {
+          "width": 1080,
+          "height": 1350,
+          "format": "WEBP",
+          "fileSizeBytes": 219672
+        }
+      }
+    },
+    "winter": {
+      "label": "Winter",
+      "japanese": "冬",
+      "romaji": "Fuyu",
+      "period": "December–February",
+      "dateRange": {
+        "startMonth": 12,
+        "endMonth": 2
+      },
+      "atmosphere": [
+        "quiet",
+        "peaceful",
+        "cool",
+        "cozy"
+      ],
+      "assets": {
+        "home": "home/winter/home_winter_mobile.webp",
+        "studyRoom": "study-room/winter/study_room_winter_mobile.webp"
+      },
+      "colorModes": {
+        "light": {
+          "tokens": {
+            "primary": "#4C665C",
+            "primary-hover": "#3B534B",
+            "secondary": "#A9C4D5",
+            "accent": "#D7E5EA",
+            "background": "#F5F0E4",
+            "surface": "#FFFCF5",
+            "surface-secondary": "#EAF0F1",
+            "text-primary": "#353B32",
+            "text-secondary": "#646A60",
+            "border": "#DED8C9",
+            "border-strong": "#8E897D",
+            "success": "#2F6B4F",
+            "warning": "#79530F",
+            "error": "#A13F3F",
+            "on-primary": "#FFFCF5",
+            "on-secondary": "#26343A",
+            "on-accent": "#26343A",
+            "focus-ring": "#3B534B",
+            "disabled": "#E4DED1",
+            "on-disabled": "#5E6259",
+            "overlay": "#353B3280",
+            "success-surface": "#E6F0E7",
+            "warning-surface": "#F5ECD8",
+            "error-surface": "#F6E4E2",
+            "on-success-surface": "#254C37",
+            "on-warning-surface": "#5A3D0B",
+            "on-error-surface": "#7D3030"
+          }
+        },
+        "dark": {
+          "tokens": {
+            "primary": "#A9C4D5",
+            "primary-hover": "#BED5E1",
+            "secondary": "#405B52",
+            "accent": "#D7E5EA",
+            "background": "#242825",
+            "surface": "#2D322E",
+            "surface-secondary": "#353B36",
+            "text-primary": "#E8ECE7",
+            "text-secondary": "#B8C0B8",
+            "border": "#484F49",
+            "border-strong": "#748278",
+            "success": "#A4D4B7",
+            "warning": "#E5C58C",
+            "error": "#EFAAA5",
+            "on-primary": "#192B33",
+            "on-secondary": "#F5F0E4",
+            "on-accent": "#26343A",
+            "focus-ring": "#BED5E1",
+            "disabled": "#3C423D",
+            "on-disabled": "#B8C0B8",
+            "overlay": "#00000080",
+            "success-surface": "#30443A",
+            "warning-surface": "#4A4030",
+            "error-surface": "#4A3434",
+            "on-success-surface": "#CDE8D5",
+            "on-warning-surface": "#F0D7A8",
+            "on-error-surface": "#F3C6C0"
+          }
+        }
+      },
+      "contrastValidation": {
+        "report": "documentation/contrast_report.csv",
+        "status": "PASS",
+        "scope": "configured semantic pairings for both light and dark modes"
+      },
+      "assetSpecs": {
+        "home": {
+          "width": 1080,
+          "height": 1350,
+          "format": "WEBP",
+          "fileSizeBytes": 306132
+        },
+        "studyRoom": {
+          "width": 1080,
+          "height": 1350,
+          "format": "WEBP",
+          "fileSizeBytes": 226430
+        }
+      }
+    }
+  }
+}

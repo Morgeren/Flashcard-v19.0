@@ -1,0 +1,82 @@
+{
+  "app": "Nihongo Study Deck",
+  "version": "19.0.0-foundation",
+  "generatedAt": "build-time",
+  "sourceVersion": "18.7",
+  "dataset": {
+    "vocabulary": {
+      "total": 1205,
+      "uniqueIds": 1205,
+      "missingCoreFields": 0,
+      "withValidExamplePairs": 178,
+      "withoutValidExamplePairs": 1027,
+      "validExampleRecords": 180,
+      "jlptLevels": {
+        "N5": 466,
+        "N4": 212,
+        "Unclassified": 2,
+        "N3": 330,
+        "N2": 169,
+        "N1": 26
+      },
+      "duplicateHeadwordReadingPairs": 0,
+      "invalidJlptLabels": 0,
+      "invalidPartOfSpeechLabels": 0
+    },
+    "reading": {
+      "corePassages": 950,
+      "legacyPassages": 6,
+      "totalPassages": 956,
+      "uniqueIds": 956,
+      "levels": {
+        "N5": 150,
+        "N5_REINFORCEMENT": 150,
+        "N4": 150,
+        "N5_N4_BRIDGE": 50,
+        "N3": 150,
+        "N2": 150,
+        "N1": 150
+      },
+      "reviewStatuses": {
+        "unreviewed": 456,
+        "needs_language_review": 500
+      },
+      "questionStructureIssues": 0
+    },
+    "vocabularyReferences": {
+      "total": 3330,
+      "matched": 2351,
+      "needsReview": 0,
+      "unmatched": 979,
+      "matchRule": "Exact normalized Japanese headword only; no fuzzy or morphological auto-match."
+    },
+    "kanjiIndex": {
+      "uniqueCharacters": 801,
+      "note": "Index of observed characters only; readings, meanings, stroke counts, and radicals intentionally left unverified."
+    },
+    "grammarIndex": {
+      "uniquePatterns": 49,
+      "sources": [
+        "V10 grammar layer",
+        "V13 grammar tutor",
+        "Reading Library"
+      ],
+      "allStatuses": "needs_review"
+    }
+  },
+  "checks": {
+    "duplicateVocabularyIds": 0,
+    "duplicateReadingIds": 0,
+    "questionStructureIssues": [],
+    "duplicateVocabularyHeadwordReadingPairs": 0,
+    "invalidJlptLabels": 0,
+    "invalidPartOfSpeechLabels": 0,
+    "recordsPromotedToVerifiedByBuild": 0
+  },
+  "notes": [
+    "No Japanese meanings, readings, example sentences, or JLPT labels were invented during this build.",
+    "Exact headword matches are linked automatically; unmatched and ambiguous references remain visible for review.",
+    "Legacy content review statuses were preserved; no record was promoted to Verified.",
+    "This report validates structure, not linguistic correctness."
+  ]
+}

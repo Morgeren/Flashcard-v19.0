@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Countryside Book app icon">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E7F0E4"/>
+      <stop offset="1" stop-color="#D5E2D0"/>
+    </linearGradient>
+    <linearGradient id="bookCover" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#617B5C"/>
+      <stop offset="1" stop-color="#344B3A"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E6C99D"/>
+      <stop offset="1" stop-color="#C99F6D"/>
+    </linearGradient>
+    <clipPath id="sceneClip"><path d="M48 64 Q48 42 72 42 H440 Q464 42 464 66 V353 Q256 392 48 353 Z"/></clipPath>
+  </defs>
+
+  <!-- Permanent warm-cream app background -->
+  <rect width="512" height="512" fill="#F5F0E4"/>
+
+  <!-- Landscape vignette -->
+  <g clip-path="url(#sceneClip)">
+    <rect x="48" y="42" width="416" height="340" fill="url(#sky)"/>
+    <circle cx="365" cy="115" r="34" fill="#EACB8B" opacity=".9"/>
+    <path d="M48 236 L130 137 L185 198 L270 91 L365 207 L414 155 L464 218 V362 H48Z" fill="#8EA9B0"/>
+    <path d="M215 155 L270 91 L323 157 L297 145 L282 153 L270 137 L255 155 L242 147Z" fill="#F7F6EF"/>
+    <path d="M48 250 L125 180 L177 219 L246 151 L320 230 L390 174 L464 244 V366 H48Z" fill="#91A98A"/>
+    <path d="M48 270 Q115 213 178 251 Q235 206 292 248 Q374 206 464 258 V370 H48Z" fill="#6F8D69"/>
+    <path d="M48 296 Q120 250 190 280 Q276 244 350 283 Q420 254 464 284 V374 H48Z" fill="#829F65"/>
+    <!-- distant tree clusters -->
+    <g fill="#506D53">
+      <path d="M72 279 l17 -43 17 43Z M92 282 l19 -52 20 52Z M375 273 l19 -47 19 47Z M402 282 l17 -54 18 54Z"/>
+    </g>
+    <g fill="#A8B89A">
+      <circle cx="85" cy="263" r="18"/><circle cx="112" cy="251" r="20"/><circle cx="390" cy="254" r="20"/><circle cx="422" cy="263" r="17"/>
+    </g>
+
+    <!-- farmhouse foundation and walls -->
+    <path d="M163 226 L256 178 L350 226 V329 H163Z" fill="url(#wood)" stroke="#705343" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M174 235 H339 V326 H174Z" fill="#E9D9BC" opacity=".72"/>
+    <!-- gable -->
+    <path d="M184 223 L256 184 L329 223Z" fill="#D8B88C" stroke="#705343" stroke-width="4"/>
+    <path d="M195 222 L256 190 L316 222" fill="none" stroke="#F5E9D1" stroke-width="4"/>
+    <!-- tiled roof silhouette -->
+    <path d="M145 233 L256 163 L367 233 L354 242 L256 184 L158 242Z" fill="#45564E" stroke="#344B3A" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M157 231 L256 172 L355 231" fill="none" stroke="#80918A" stroke-width="5" stroke-linecap="round"/>
+    <path d="M176 229 L256 183 L337 229" fill="none" stroke="#AAB4A9" stroke-width="2.5" opacity=".85"/>
+    <!-- eaves and timber -->
+    <path d="M157 239 Q256 220 355 239 L352 250 Q256 233 160 250Z" fill="#705343"/>
+    <path d="M176 248 V326 M336 248 V326 M256 223 V326" stroke="#8D6849" stroke-width="8"/>
+    <path d="M179 258 H333 M179 320 H333" stroke="#A98261" stroke-width="4"/>
+    <!-- shoji windows -->
+    <rect x="190" y="258" width="48" height="57" rx="2" fill="#F3E7CF" stroke="#705343" stroke-width="4"/>
+    <rect x="274" y="258" width="48" height="57" rx="2" fill="#F3E7CF" stroke="#705343" stroke-width="4"/>
+    <path d="M214 260 V313 M190 286 H238 M298 260 V313 M274 286 H322" stroke="#8D6849" stroke-width="3"/>
+    <rect x="245" y="270" width="22" height="56" fill="#A98261" stroke="#705343" stroke-width="3"/>
+    <circle cx="261" cy="298" r="2.5" fill="#F5F0E4"/>
+    <!-- warm interior hints -->
+    <rect x="195" y="263" width="39" height="47" fill="#EACB8B" opacity=".34"/>
+    <rect x="279" y="263" width="39" height="47" fill="#EACB8B" opacity=".34"/>
+  </g>
+
+  <!-- book cover: one continuous base -->
+  <path d="M45 337 Q145 305 255 349 Q365 305 467 337 L461 433 Q357 407 256 459 Q154 407 51 433Z" fill="url(#bookCover)" stroke="#344B3A" stroke-width="7" stroke-linejoin="round"/>
+  <!-- page block -->
+  <path d="M59 337 Q153 309 251 350 L251 435 Q158 394 58 420Z" fill="#F8F0DD" stroke="#C8AD82" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M261 350 Q359 309 453 337 L454 420 Q354 394 261 435Z" fill="#FFF9E9" stroke="#C8AD82" stroke-width="4" stroke-linejoin="round"/>
+  <!-- page edges -->
+  <path d="M65 345 Q156 320 244 357 M65 354 Q156 330 244 365 M65 364 Q156 341 244 374" fill="none" stroke="#D8B88C" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+  <path d="M268 357 Q356 320 447 345 M268 365 Q356 330 447 354 M268 374 Q356 341 447 364" fill="none" stroke="#D8B88C" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+  <!-- central book fold -->
+  <path d="M256 349 Q250 392 256 450" fill="none" stroke="#A98261" stroke-width="5" stroke-linecap="round"/>
+  <path d="M252 350 Q256 394 261 350" fill="#E7D6B8" opacity=".9"/>
+  <!-- page lower contour and small green bookmark -->
+  <path d="M54 421 Q154 399 252 440 Q354 399 458 421" fill="none" stroke="#D1B68B" stroke-width="4"/>
+  <path d="M256 433 L277 449 L267 472 L256 461 L245 472 L235 449Z" fill="#D5A59A" stroke="#A85D50" stroke-width="2"/>
+  <!-- emblem baseline -->
+  <path d="M220 457 Q256 474 292 457" fill="none" stroke="#344B3A" stroke-width="5" stroke-linecap="round"/>
+</svg>

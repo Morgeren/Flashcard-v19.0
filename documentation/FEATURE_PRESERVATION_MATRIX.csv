@@ -1,0 +1,30 @@
+﻿Feature ID,Feature,Existing source/module,V19.1 destination,Integration status,Verification / caveat
+NAV-01,Home dashboard,V13 Tutor Home / legacy home,Home,Preserved with V19.1 seasonal hero,Static route / source checks; browser interaction not tested
+NAV-02,Learn hub,V19.1 shell + existing V13 routes,Learn,New hub; feature routes retained,Static code and module syntax checks
+NAV-03,Library hub,V19.1 local vocabulary search + existing routes,Library,New hub; Kanji lookup explicitly limited to vocab entries,Static code checks; browser interaction not tested
+NAV-04,Progress dashboard,V13 Tutor Progress,Progress,Existing progress view retained; conditional empty state added,Static code checks
+SET-01,Settings and appearance,V187 utility / V13 preferences,Secondary Settings,Existing controls relocated into secondary Settings view,Static code checks; UI visual check not tested
+LEARN-01,Flashcard and SRS,V18.6 Advanced Flashcard / V19 SRS,Learn > Flashcard,Existing routes and scheduler preserved,V19.0 SRS tests 11/11 passed
+LEARN-02,Vocabulary quiz,V13/V3 quiz route,Learn > Quiz,Existing quiz route retained,Static route mapping; browser actions not tested
+LEARN-03,Adaptive learning,V10 Learning Lab adaptive tab,Learn > Adaptive,Existing V10 tab invoked,Static route mapping; browser actions not tested
+LEARN-04,Reading practice / Reader,V11/V182 Reading / Smart Reader,Learn > Reading; Library > Reading Library,Existing Reading route retained,Existing data test suite; UI render not tested
+LEARN-05,Grammar practice/reference,V10 Learning Lab grammar route,Learn > Grammar; Library > Grammar Reference,Existing Grammar route retained; index still needs review,Static route mapping
+LEARN-06,Listening and shadowing,V10 Learning Lab listening route,Learn > Listening,Existing listening route retained,Static route mapping; audio on device not tested
+LEARN-07,Personal Tutor / sentence analysis,V13 Personal Tutor / V11 Reader sentence area,Learn > Personal Tutor,Existing sentence input area targeted; not a new tutor service,Static selector/route inspection; browser interaction not tested
+LEARN-08,JLPT assessment,V10 Learning Lab exam route,Learn > JLPT,Existing exam route retained,Static route mapping
+LIB-01,Vocabulary search and detail,Existing allWords dataset and V13 saveVocabulary,Library > Vocabulary,Local search/detail and save shortcut added,Static JS checks; browser interaction not tested
+LIB-02,Kanji discovery,801-character extracted kanji index / vocabulary data,Library > Kanji,Searches kanji through vocabulary entries; not a verified full kanji dictionary,Data limitation documented
+LIB-03,Grammar Reference,Existing V10 grammar route / 49-pattern index,Library > Grammar Reference,Existing grammar feature route retained,Static route mapping; linguistic review pending
+LIB-04,Reading Library,Existing V11/V182 Reading,Library > Reading Library,Existing Reading route retained,Existing reading dataset tests pass
+LIB-05,Saved vocabulary,V13 savedVocabulary / capturedWords,Library > Disimpan,Existing saved data displayed; save action uses V13 API,Static code check; live persistence interaction not tested
+EMPTY-01,Empty Library/Search,New canonical PNG assets,Library,Shown for empty collection/search states,Asset/transparency validation
+EMPTY-02,Empty Progress/History,New canonical PNG assets,Progress,Shown only when progress/history data absent,Static conditional logic; data edge cases need browser test
+EMPTY-03,Empty Review,New canonical PNG asset,Learn/Home review context,Shown when due review count is zero,Static conditional logic
+PWA-01,Manifest and branding,New app icon package,PWA shell,Manifest/icons updated,Static path and JSON checks
+PWA-02,Offline assets,Existing service worker + local assets,PWA shell,Cache version bumped; 67 resources precached,Static precache checks; device offline not tested
+DATA-01,Vocabulary/Reading data,Existing V19.0 JSON datasets,All relevant routes,No dataset edit,Byte-identical comparison and validator
+DATA-02,SRS and user progress,Existing storage and SRS modules,Flashcard/Progress,No SRS/data schema edit,Byte-identical source check; live profile migration not tested
+DATA-03,Backup/restore/import/export,Existing V187 data panel/legacy tools,Settings > Data & Maintenance,Existing controls retained in secondary Settings container,Static DOM/source check; full backup cycle not tested
+DATA-04,Content Audit,Existing V10/V187 audit route,Settings > Content Audit,Existing audit route retained,Static route mapping
+SCOPE-01,Pet system,No identifiable implementation/entry point found in supplied V19.0 base,Out of scope,No pet-related source modified; cannot verify preservation of absent/unidentified code,Static source scan
+SCOPE-02,Writing Practice,Not implemented as dedicated module in V19.0 base,Not added,No unsupported feature claim,Base README audit

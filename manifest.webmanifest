@@ -1,0 +1,19 @@
+{
+  "id": "./",
+  "name": "Nihongo Study Deck V19.1 — Cozy Japanese Countryside",
+  "short_name": "Nihongo Deck",
+  "description": "Belajar bahasa Jepang offline dengan flashcard, SRS, Reading, Grammar, Listening, dan progres dalam suasana Cozy Japanese Countryside empat musim.",
+  "lang": "id-ID",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#F5F0E4",
+  "theme_color": "#F5F0E4",
+  "categories": ["education", "utilities"],
+  "icons": [
+    {"src": "./assets/branding/android/app_icon_192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "./assets/branding/android/app_icon_512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "./assets/branding/android/app_icon_maskable_512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}

@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {scheduleSrs,simulateSrsSequence} from '../assets/js/v19/srs-engine.js';
+const NOW=Date.UTC(2026,0,1);
+test('Again schedules short retry and increments lapse',()=>{const n=scheduleSrs({repetitions:2,interval:6,easeFactor:2.5,lapses:1},'again',NOW);assert.equal(n.repetitions,0);assert.equal(n.lapses,2);assert.equal(n.interval,0.01);assert.equal(n.dueAt,NOW+864000);});
+test('Good follows learning steps and then ease interval',()=>{let s={};s={...s,...scheduleSrs(s,'good',NOW)};assert.equal(s.interval,1);s={...s,...scheduleSrs(s,'good',NOW)};assert.equal(s.interval,6);s={...s,...scheduleSrs(s,'good',NOW)};assert.equal(s.interval,15);});
+test('Easy gives longer first interval than Good',()=>{assert.equal(scheduleSrs({},'easy',NOW).interval,4);assert.equal(scheduleSrs({},'good',NOW).interval,1);});
+test('Hard shortens ease and remains at least one day',()=>{const s=scheduleSrs({repetitions:2,interval:1,easeFactor:1.4},'hard',NOW);assert.equal(s.interval,2);assert.equal(s.easeFactor,1.3);});
+test('Repeated successful reviews can reach mastered state',()=>{const seq=simulateSrsSequence(['good','good','good','good','good','good']);assert.ok(seq.at(-1).interval>=7);assert.equal(seq.at(-1).status,'mastered');});
+test('Invalid ratings are rejected',()=>{assert.throws(()=>scheduleSrs({},'maybe',NOW),TypeError);});

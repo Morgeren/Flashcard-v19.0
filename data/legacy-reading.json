@@ -1,0 +1,1777 @@
+[
+  {
+    "id": "legacy-r-n5-1",
+    "title": "日曜日の公園",
+    "level": "N5",
+    "topic": "bacaan lama V10",
+    "genre": "narasi",
+    "difficulty": 1,
+    "estimatedMinutes": 1,
+    "japaneseText": "今日は日曜日です。私は朝七時に起きます。朝ご飯を食べて、友達と公園へ行きます。公園でサッカーをします。午後は家で本を読みます。とても楽しい一日です。",
+    "indonesianTranslation": "Hari ini hari Minggu. Saya bangun pukul tujuh pagi. Setelah sarapan, saya pergi ke taman bersama teman. Kami bermain sepak bola di taman. Pada sore hari saya membaca buku di rumah. Hari yang sangat menyenangkan.",
+    "furiganaText": null,
+    "vocabulary": [
+      {
+        "japanese": "日曜日",
+        "reading": "にちようび",
+        "meaning": "hari Minggu",
+        "legacyWordId": "seed-0134",
+        "linkStatus": "matched",
+        "canonicalWordId": "seed-0134",
+        "matchMethod": "exact_normalized_headword",
+        "matchConfidence": 1.0
+      },
+      {
+        "japanese": "起きます",
+        "reading": "おきます",
+        "meaning": "bangun",
+        "legacyWordId": null,
+        "linkStatus": "unmatched",
+        "canonicalWordId": null,
+        "matchMethod": null,
+        "matchConfidence": 0.0
+      },
+      {
+        "japanese": "友達",
+        "reading": "ともだち",
+        "meaning": "teman",
+        "legacyWordId": "seed-0004",
+        "linkStatus": "matched",
+        "canonicalWordId": "seed-0004",
+        "matchMethod": "exact_normalized_headword",
+        "matchConfidence": 1.0
+      },
+      {
+        "japanese": "公園",
+        "reading": "こうえん",
+        "meaning": "taman",
+        "legacyWordId": null,
+        "linkStatus": "unmatched",
+        "canonicalWordId": null,
+        "matchMethod": null,
+        "matchConfidence": 0.0
+      },
+      {
+        "japanese": "楽しい",
+        "reading": "たのしい",
+        "meaning": "menyenangkan",
+        "legacyWordId": "seed-0317",
+        "linkStatus": "matched",
+        "canonicalWordId": "seed-0317",
+        "matchMethod": "exact_normalized_headword",
+        "matchConfidence": 1.0
+      }
+    ],
+    "grammarPoints": [],
+    "questions": [
+      {
+        "id": "legacy-q-r-n5-1",
+        "type": "multiple_choice",
+        "prompt": "友達とどこへ行きますか。",
+        "options": [
+          "公園",
+          "学校",
+          "病院",
+          "会社"
+        ],
+        "answerIndex": 0,
+        "explanation": "Teks menyatakan 友達と公園へ行きます。",
+        "evidence": "",
+        "difficulty": 1
+      }
+    ],
+    "sourceType": "legacy_v10",
+    "verificationStatus": "unreviewed",
+    "contentVersion": "10.0.0",
+    "createdAt": null,
+    "updatedAt": null,
+    "legacy": true,
+    "furiganaTokens": [
+      {
+        "text": "今日",
+        "reading": "きょう"
+      },
+      {
+        "text": "は",
+        "reading": "は"
+      },
+      {
+        "text": "日曜日",
+        "reading": "にちようび"
+      },
+      {
+        "text": "で",
+        "reading": "で"
+      },
+      {
+        "text": "す。",
+        "reading": null
+      },
+      {
+        "text": "私",
+        "reading": "わたし"
+      },
+      {
+        "text": "は",
+        "reading": "は"
+      },
+      {
+        "text": "朝",
+        "reading": "あさ"
+      },
+      {
+        "text": "七時",
+        "reading": "しちじ"
+      },
+      {
+        "text": "に",
+        "reading": "に"
+      },
+      {
+        "text": "起きます",
+        "reading": "おきます"
+      },
+      {
+        "text": "。",
+        "reading": null
+      },
+      {
+        "text": "朝ご飯",
+        "reading": "あさごはん"
+      },
+      {
+        "text": "を",
+        "reading": "を"
+      },
+      {
+        "text": "食べて",
+        "reading": "たべて"
+      },
+      {
+        "text": "、",
+        "reading": null
+      },
+      {
+        "text": "友達",
+        "reading": "ともだち"
+      },
+      {
+        "text": "と",
+        "reading": "と"
+      },
+      {
+        "text": "公園",
+        "reading": "こうえん"
+      },
+      {
+        "text": "へ",
+        "reading": "へ"
+      },
+      {
+        "text": "行きます",
+        "reading": "いきます"
+      },
+      {
+        "text": "。",
+        "reading": null
+      },
+      {
+        "text": "公園",
+        "reading": "こうえん"
+      },
+      {
+        "text": "で",
+        "reading": "で"
+      },
+      {
+        "text": "サッカー",
+        "reading": null
+      },
+      {
+        "text": "を",
+        "reading": "を"
+      },
+      {
+        "text": "します。",
+        "reading": null
+      },
+      {
+        "text": "午後",
+        "reading": "ごご"
+      },
+      {
+        "text": "は",
+        "reading": "は"
+      },
+      {
+        "text": "家",
+        "reading": "いえ"
+      },
+      {
+        "text": "で",
+        "reading": "で"
+      },
+      {
+        "text": "本",
+        "reading": "ほん"
+      },
+      {
+        "text": "を",
+        "reading": "を"
+      },
+      {
+        "text": "読みます",
+        "reading": "よみます"
+      },
+      {
+        "text": "。",
+        "reading": null
+      },
+      {
+        "text": "とても",
+        "reading": "とても"
+      },
+      {
+        "text": "楽しい",
+        "reading": "たのしい"
+      },
+      {
+        "text": "一",
+        "reading": "いち"
+      },
+      {
+        "text": "日",
+        "reading": null
+      },
+      {
+        "text": "で",
+        "reading": "で"
+      },
+      {
+        "text": "す。",
+        "reading": null
+      }
+    ],
+    "furiganaAudit": {
+      "kanjiChars": 28,
+      "annotatedKanjiChars": 27,
+      "coverage": 0.9643,
+      "unresolvedTokens": [
+        "日"
+      ]
+    },
+    "schemaVersion": 19,
+    "contentReviewStatus": "unreviewed",
+    "vocabularyLinkAudit": {
+      "total": 5,
+      "matched": 3,
+      "needsReview": 0,
+      "unmatched": 2
+    }
+  },
+  {
+    "id": "legacy-r-n5-2",
+    "title": "学校の一日",
+    "level": "N5",
+    "topic": "bacaan lama V10",
+    "genre": "narasi",
+    "difficulty": 1,
+    "estimatedMinutes": 1,
+    "japaneseText": "まいあさ、私は六時半に起きます。七時に朝ご飯を食べます。それからバスで学校へ行きます。授業は八時に始まります。昼休みに友達と話します。午後三時に家へ帰ります。",
+    "indonesianTranslation": "Setiap pagi saya bangun pukul setengah tujuh. Pukul tujuh saya sarapan. Setelah itu saya pergi ke sekolah naik bus. Pelajaran dimulai pukul delapan. Saat istirahat siang saya berbicara dengan teman. Pukul tiga sore saya pulang ke rumah.",
+    "furiganaText": null,
+    "vocabulary": [
+      {
+        "japanese": "毎朝",
+        "reading": "まいあさ",
+        "meaning": "setiap pagi",
+        "legacyWordId": "seed-0111",
+        "linkStatus": "matched",
+        "canonicalWordId": "seed-0111",
+        "matchMethod": "exact_normalized_headword",
+        "matchConfidence": 1.0
+      },
+      {
+        "japanese": "半",
+        "reading": "はん",
+        "meaning": "setengah",
+        "legacyWordId": null,
+        "linkStatus": "unmatched",
+        "canonicalWordId": null,
+        "matchMethod": null,
+        "matchConfidence": 0.0
+      },
+      {
+        "japanese": "授業",
+        "reading": "じゅぎょう",
+        "meaning": "pelajaran",
+        "legacyWordId": "seed-0205",
+        "linkStatus": "matched",
+        "canonicalWordId": "seed-0205",
+        "matchMethod": "exact_normalized_headword",
+        "matchConfidence": 1.0
+      },
+      {
+        "japanese": "昼休み",
+        "reading": "ひるやすみ",
+        "meaning": "istirahat siang",
+        "legacyWordId": null,
+        "linkStatus": "unmatched",
+        "canonicalWordId": null,
+        "matchMethod": null,
+        "matchConfidence": 0.0
+      },
+      {
+        "japanese": "帰ります",
+        "reading": "かえります",
+        "meaning": "pulang",
+        "legacyWordId": null,
+        "linkStatus": "unmatched",
+        "canonicalWordId": null,
+        "matchMethod": null,
+        "matchConfidence": 0.0
+      }
+    ],
+    "grammarPoints": [],
+    "questions": [
+      {
+        "id": "legacy-q-r-n5-2",
+        "type": "multiple_choice",
+        "prompt": "授業は何時に始まりますか。",
+        "options": [
+          "七時",
+          "八時",
+          "九時",
+          "三時"
+        ],
+        "answerIndex": 1,
+        "explanation": "Teks menyebut 授業は八時に始まります。",
+        "evidence": "",
+        "difficulty": 1
+      }
+    ],
+    "sourceType": "legacy_v10",
+    "verificationStatus": "unreviewed",
+    "contentVersion": "10.0.0",
+    "createdAt": null,
+    "updatedAt": null,
+    "legacy": true,
+    "furiganaTokens": [
+      {
+        "text": "まいあさ、",
+        "reading": null
+      },
+      {
+        "text": "私",
+        "reading": "わたし"
+      },
+      {
+        "text": "は",
+        "reading": "は"
+      },
+      {
+        "text": "六時",
+        "reading": "ろくじ"
+      },
+      {
+        "text": "半",
+        "reading": "はん"
+      },
+      {
+        "text": "に",
+        "reading": "に"
+      },
+      {
+        "text": "起きます",
+        "reading": "おきます"
+      },
+      {
+        "text": "。",
+        "reading": null
+      },
+      {
+        "text": "七時",
+        "reading": "しちじ"
+      },
+      {
+        "text": "に",
+        "reading": "に"
+      },
+      {
+        "text": "朝ご飯",
+        "reading": "あさごはん"
+      },
+      {
+        "text": "を",
+        "reading": "を"
+      },
+      {
+        "text": "食べます",
+        "reading": "たべます"
+      },
+      {
+        "text": "。",
+        "reading": null
+      },
+      {
+        "text": "それから",
+        "reading": "それから"
+      },
+      {
+        "text": "バス",
+        "reading": "ばす"
+      },
+      {
+        "text": "で",
+        "reading": "で"
+      },
+      {
+        "text": "学校",
+        "reading": "がっこう"
+      },
+      {
+        "text": "へ",
+        "reading": "へ"
+      },
+      {
+        "text": "行きます",
+        "reading": "いきます"
+      },
+      {
+        "text": "。",
+        "reading": null
+      },
+      {
+        "text": "授業",
+        "reading": "じゅぎょう"
+      },
+      {
+        "text": "は",
+        "reading": "は"
+      },
+      {
+        "text": "八時",
+        "reading": "はちじ"
+      },
+      {
+        "text": "に",
+        "reading": "に"
+      },
+      {
+        "text": "始まります。",
+        "reading": null
+      },
+      {
+        "text": "昼休み",
+        "reading": "ひるやすみ"
+      },
+      {
+        "text": "に",
+        "reading": "に"
+      },
+      {
+        "text": "友達",
+        "reading": "ともだち"
+      },
+      {
+        "text": "と",
+        "reading": "と"
+      },
+      {
+        "text": "話します",
+        "reading": "はなします"
+      },
+      {
+        "text": "。",
+        "reading": null
+      },
+      {
+        "text": "午後",
+        "reading": "ごご"
+      },
+      {
+        "text": "三時",
+        "reading": "さんじ"
+      },
+      {
+        "text": "に",
+        "reading": "に"
+      },
+      {
+        "text": "家",
+        "reading": "いえ"
+      },
+      {
+        "text": "へ",
+        "reading": "へ"
+      },
+      {
+        "text": "帰ります",
+        "reading": "かえります"
+      },
+      {
+        "text": "。",
+        "reading": null
+      }
+    ],
+    "furiganaAudit": {
+      "kanjiChars": 29,
+      "annotatedKanjiChars": 28,
+      "coverage": 0.9655,
+      "unresolvedTokens": [
+        "始まります。"
+      ]
+    },
+    "schemaVersion": 19,
+    "contentReviewStatus": "unreviewed",
+    "vocabularyLinkAudit": {
+      "total": 5,
+      "matched": 2,
+      "needsReview": 0,
+      "unmatched": 3
+    }
+  },
+  {
+    "id": "legacy-r-n5-3",
+    "title": "スーパーで買い物",
+    "level": "N5",
+    "topic": "bacaan lama V10",
+    "genre": "narasi",
+    "difficulty": 1,
+    "estimatedMinutes": 1,
+    "japaneseText": "土曜日に母とスーパーへ行きました。りんごを三つ買いました。それから牛乳とパンも買いました。家に帰って、母と昼ご飯を作りました。",
+    "indonesianTranslation": "Pada hari Sabtu saya pergi ke supermarket bersama ibu. Kami membeli tiga apel. Setelah itu kami juga membeli susu dan roti. Setelah pulang, saya membuat makan siang bersama ibu.",
+    "furiganaText": null,
+    "vocabulary": [
+      {
+        "japanese": "土曜日",
+        "reading": "どようび",
+        "meaning": "hari Sabtu",
+        "legacyWordId": "seed-0133",
+        "linkStatus": "matched",
+        "canonicalWordId": "seed-0133",
+        "matchMethod": "exact_normalized_headword",
+        "matchConfidence": 1.0
+      },
+      {
+        "japanese": "母",
+        "reading": "はは",
+        "meaning": "ibu sendiri",
+        "legacyWordId": "seed-0183",
+        "linkStatus": "matched",
+        "canonicalWordId": "seed-0183",
+        "matchMethod": "exact_normalized_headword",
+        "matchConfidence": 1.0
+      },
+      {
+        "japanese": "三つ",
+        "reading": "みっつ",
+        "meaning": "tiga buah",
+        "legacyWordId": null,
+        "linkStatus": "unmatched",
+        "canonicalWordId": null,
+        "matchMethod": null,
+        "matchConfidence": 0.0
+      },
+      {
+        "japanese": "牛乳",
+        "reading": "ぎゅうにゅう",
+        "meaning": "susu",
+        "legacyWordId": "seed-0267",
+        "linkStatus": "matched",
+        "canonicalWordId": "seed-0267",
+        "matchMethod": "exact_normalized_headword",
+        "matchConfidence": 1.0
+      },
+      {
+        "japanese": "作りました",
+        "reading": "つくりました",
+        "meaning": "membuat (lampau sopan)",
+        "legacyWordId": null,
+        "linkStatus": "unmatched",
+        "canonicalWordId": null,
+        "matchMethod": null,
+        "matchConfidence": 0.0
+      }
+    ],
+    "grammarPoints": [],
+    "questions": [
+      {
+        "id": "legacy-q-r-n5-3",
+        "type": "multiple_choice",
+        "prompt": "りんごをいくつ買いましたか。",
+        "options": [
+          "一つ",
+          "二つ",
+          "三つ",
+          "四つ"
+        ],
+        "answerIndex": 2,
+        "explanation": "Teks menyatakan りんごを三つ買いました。",
+        "evidence": "",
+        "difficulty": 1
+      }
+    ],
+    "sourceType": "legacy_v10",
+    "verificationStatus": "unreviewed",
+    "contentVersion": "10.0.0",
+    "createdAt": null,
+    "updatedAt": null,
+    "legacy": true,
+    "furiganaTokens": [
+      {
+        "text": "土曜日",
+        "reading": "どようび"
+      },
+      {
+        "text": "に",
+        "reading": "に"
+      },
+      {
+        "text": "母",
+        "reading": "はは"
+      },
+      {
+        "text": "と",
+        "reading": "と"
+      },
+      {
+        "text": "スーパー",
+        "reading": "すーぱー"
+      },
+      {
+        "text": "へ",
+        "reading": "へ"
+      },
+      {
+        "text": "行きました",
+        "reading": "いきました"
+      },
+      {
+        "text": "。",
+        "reading": null
+      },
+      {
+        "text": "りんご",
+        "reading": "りんご"
+      },
+      {
+        "text": "を",
+        "reading": "を"
+      },
+      {
+        "text": "三つ",
+        "reading": "みっつ"
+      },
+      {
+        "text": "買いました",
+        "reading": "かいました"
+      },
+      {
+        "text": "。",
+        "reading": null
+      },
+      {
+        "text": "それから",
+        "reading": "それから"
+      },
+      {
+        "text": "牛乳",
+        "reading": "ぎゅうにゅう"
+      },
+      {
+        "text": "と",
+        "reading": "と"
+      },
+      {
+        "text": "パン",
+        "reading": "ぱん"
+      },
+      {
+        "text": "も",
+        "reading": "も"
+      },
+      {
+        "text": "買いました",
+        "reading": "かいました"
+      },
+      {
+        "text": "。",
+        "reading": null
+      },
+      {
+        "text": "家",
+        "reading": "いえ"
+      },
+      {
+        "text": "に",
+        "reading": "に"
+      },
+      {
+        "text": "帰って",
+        "reading": "かえって"
+      },
+      {
+        "text": "、",
+        "reading": null
+      },
+      {
+        "text": "母",
+        "reading": "はは"
+      },
+      {
+        "text": "と",
+        "reading": "と"
+      },
+      {
+        "text": "昼ご飯",
+        "reading": "ひるごはん"
+      },
+      {
+        "text": "を",
+        "reading": "を"
+      },
+      {
+        "text": "作りました",
+        "reading": "つくりました"
+      },
+      {
+        "text": "。",
+        "reading": null
+      }
+    ],
+    "furiganaAudit": {
+      "kanjiChars": 16,
+      "annotatedKanjiChars": 16,
+      "coverage": 1.0,
+      "unresolvedTokens": []
+    },
+    "schemaVersion": 19,
+    "contentReviewStatus": "unreviewed",
+    "vocabularyLinkAudit": {
+      "total": 5,
+      "matched": 3,
+      "needsReview": 0,
+      "unmatched": 2
+    }
+  },
+  {
+    "id": "legacy-r-n4-1",
+    "title": "図書館での勉強",
+    "level": "N4",
+    "topic": "bacaan lama V10",
+    "genre": "narasi",
+    "difficulty": 3,
+    "estimatedMinutes": 1,
+    "japaneseText": "先週の土曜日、私は試験のために図書館へ行きました。家ではテレビやスマートフォンが気になって、なかなか集中できないからです。図書館では静かな席を選び、二時間ぐらい日本語を勉強しました。帰る前に、分からなかった言葉をノートにまとめました。",
+    "indonesianTranslation": "Sabtu minggu lalu, saya pergi ke perpustakaan untuk ujian. Di rumah saya mudah terdistraksi oleh televisi dan ponsel, sehingga sulit berkonsentrasi. Di perpustakaan saya memilih tempat duduk yang tenang dan belajar bahasa Jepang sekitar dua jam. Sebelum pulang, saya merangkum kata-kata yang belum dipahami di buku catatan.",
+    "furiganaText": null,
+    "vocabulary": [
+      {
+        "japanese": "試験",
+        "reading": "しけん",
+        "meaning": "ujian",
+        "legacyWordId": "seed-0207",
+        "linkStatus": "matched",
+        "canonicalWordId": "seed-0207",
+        "matchMethod": "exact_normalized_headword",
+        "matchConfidence": 1.0
+      },
+      {
+        "japanese": "集中する",
+        "reading": "しゅうちゅうする",
+        "meaning": "berkonsentrasi",
+        "legacyWordId": null,
+        "linkStatus": "unmatched",
+        "canonicalWordId": null,
+        "matchMethod": null,
+        "matchConfidence": 0.0
+      },
+      {
+        "japanese": "選びます",
+        "reading": "えらびます",
+        "meaning": "memilih",
+        "legacyWordId": null,
+        "linkStatus": "unmatched",
+        "canonicalWordId": null,
+        "matchMethod": null,
+        "matchConfidence": 0.0
+      },
+      {
+        "japanese": "分からない",
+        "reading": "わからない",
+        "meaning": "tidak mengerti",
+        "legacyWordId": null,
+        "linkStatus": "unmatched",
+        "canonicalWordId": null,
+        "matchMethod": null,
+        "matchConfidence": 0.0
+      },
+      {
+        "japanese": "まとめます",
+        "reading": "まとめます",
+        "meaning": "merangkum",
+        "legacyWordId": null,
+        "linkStatus": "unmatched",
+        "canonicalWordId": null,
+        "matchMethod": null,
+        "matchConfidence": 0.0
+      }
+    ],
+    "grammarPoints": [],
+    "questions": [
+      {
+        "id": "legacy-q-r-n4-1",
+        "type": "multiple_choice",
+        "prompt": "どうして図書館へ行きましたか。",
+        "options": [
+          "友達に会うため",
+          "試験の勉強をするため",
+          "本を返すため",
+          "アルバイトをするため"
+        ],
+        "answerIndex": 1,
+        "explanation": "Kalimat pertama menyatakan 試験のために図書館へ行きました。",
+        "evidence": "",
+        "difficulty": 3
+      }
+    ],
+    "sourceType": "legacy_v10",
+    "verificationStatus": "unreviewed",
+    "contentVersion": "10.0.0",
+    "createdAt": null,
+    "updatedAt": null,
+    "legacy": true,
+    "furiganaTokens": [
+      {
+        "text": "先週",
+        "reading": "せんしゅう"
+      },
+      {
+        "text": "の",
+        "reading": "の"
+      },
+      {
+        "text": "土曜日",
+        "reading": "どようび"
+      },
+      {
+        "text": "、",
+        "reading": null
+      },
+      {
+        "text": "私",
+        "reading": "わたし"
+      },
+      {
+        "text": "は",
+        "reading": "は"
+      },
+      {
+        "text": "試験",
+        "reading": "しけん"
+      },
+      {
+        "text": "の",
+        "reading": "の"
+      },
+      {
+        "text": "ために",
+        "reading": "ために"
+      },
+      {
+        "text": "図書館",
+        "reading": "としょかん"
+      },
+      {
+        "text": "へ",
+        "reading": "へ"
+      },
+      {
+        "text": "行きました",
+        "reading": "いきました"
+      },
+      {
+        "text": "。",
+        "reading": null
+      },
+      {
+        "text": "家",
+        "reading": "いえ"
+      },
+      {
+        "text": "で",
+        "reading": "で"
+      },
+      {
+        "text": "は",
+        "reading": "は"
+      },
+      {
+        "text": "テレビや",
+        "reading": null
+      },
+      {
+        "text": "スマートフォン",
+        "reading": "すまーとふぉん"
+      },
+      {
+        "text": "が",
+        "reading": "が"
+      },
+      {
+        "text": "気",
+        "reading": null
+      },
+      {
+        "text": "に",
+        "reading": "に"
+      },
+      {
+        "text": "なって、なかなか",
+        "reading": null
+      },
+      {
+        "text": "集中",
+        "reading": "しゅうちゅう"
+      },
+      {
+        "text": "で",
+        "reading": "で"
+      },
+      {
+        "text": "きない",
+        "reading": null
+      },
+      {
+        "text": "から",
+        "reading": "から"
+      },
+      {
+        "text": "で",
+        "reading": "で"
+      },
+      {
+        "text": "す。",
+        "reading": null
+      },
+      {
+        "text": "図書館",
+        "reading": "としょかん"
+      },
+      {
+        "text": "で",
+        "reading": "で"
+      },
+      {
+        "text": "は",
+        "reading": "は"
+      },
+      {
+        "text": "静か",
+        "reading": "しずか"
+      },
+      {
+        "text": "な席",
+        "reading": null
+      },
+      {
+        "text": "を",
+        "reading": "を"
+      },
+      {
+        "text": "選び、",
+        "reading": null
+      },
+      {
+        "text": "二時",
+        "reading": "にじ"
+      },
+      {
+        "text": "間",
+        "reading": null
+      },
+      {
+        "text": "ぐらい",
+        "reading": "ぐらい"
+      },
+      {
+        "text": "日本語",
+        "reading": "にほんご"
+      },
+      {
+        "text": "を",
+        "reading": "を"
+      },
+      {
+        "text": "勉強しました",
+        "reading": "べんきょうしました"
+      },
+      {
+        "text": "。",
+        "reading": null
+      },
+      {
+        "text": "帰る",
+        "reading": "かえる"
+      },
+      {
+        "text": "前",
+        "reading": "まえ"
+      },
+      {
+        "text": "に",
+        "reading": "に"
+      },
+      {
+        "text": "、",
+        "reading": null
+      },
+      {
+        "text": "分",
+        "reading": "ふん"
+      },
+      {
+        "text": "から",
+        "reading": "から"
+      },
+      {
+        "text": "なかった",
+        "reading": null
+      },
+      {
+        "text": "言葉",
+        "reading": "ことば"
+      },
+      {
+        "text": "を",
+        "reading": "を"
+      },
+      {
+        "text": "ノート",
+        "reading": null
+      },
+      {
+        "text": "に",
+        "reading": "に"
+      },
+      {
+        "text": "ま",
+        "reading": null
+      },
+      {
+        "text": "と",
+        "reading": "と"
+      },
+      {
+        "text": "めました。",
+        "reading": null
+      }
+    ],
+    "furiganaAudit": {
+      "kanjiChars": 35,
+      "annotatedKanjiChars": 31,
+      "coverage": 0.8857,
+      "unresolvedTokens": [
+        "気",
+        "な席",
+        "選び、",
+        "間"
+      ]
+    },
+    "schemaVersion": 19,
+    "contentReviewStatus": "unreviewed",
+    "vocabularyLinkAudit": {
+      "total": 5,
+      "matched": 1,
+      "needsReview": 0,
+      "unmatched": 4
+    }
+  },
+  {
+    "id": "legacy-r-n4-2",
+    "title": "雨の日の通勤",
+    "level": "N4",
+    "topic": "bacaan lama V10",
+    "genre": "narasi",
+    "difficulty": 3,
+    "estimatedMinutes": 1,
+    "japaneseText": "今朝は雨が強かったので、いつもより早く家を出ました。駅まで歩くと時間がかかると思い、バスに乗りました。しかし、道が混んでいたため、会社に着いたのは予定より十五分遅くなりました。明日は天気予報を確認して、必要ならもっと早く出ようと思います。",
+    "indonesianTranslation": "Pagi ini hujan deras, jadi saya berangkat dari rumah lebih awal daripada biasanya. Karena saya pikir berjalan ke stasiun akan memakan waktu, saya naik bus. Namun, karena jalan macet, saya tiba di perusahaan lima belas menit lebih lambat dari rencana. Besok saya akan memeriksa prakiraan cuaca dan, jika perlu, berangkat lebih awal lagi.",
+    "furiganaText": null,
+    "vocabulary": [
+      {
+        "japanese": "強い",
+        "reading": "つよい",
+        "meaning": "kuat/deras",
+        "legacyWordId": "seed-0323",
+        "linkStatus": "matched",
+        "canonicalWordId": "seed-0323",
+        "matchMethod": "exact_normalized_headword",
+        "matchConfidence": 1.0
+      },
+      {
+        "japanese": "いつもより",
+        "reading": "いつもより",
+        "meaning": "daripada biasanya",
+        "legacyWordId": null,
+        "linkStatus": "unmatched",
+        "canonicalWordId": null,
+        "matchMethod": null,
+        "matchConfidence": 0.0
+      },
+      {
+        "japanese": "混む",
+        "reading": "こむ",
+        "meaning": "ramai/macet",
+        "legacyWordId": null,
+        "linkStatus": "unmatched",
+        "canonicalWordId": null,
+        "matchMethod": null,
+        "matchConfidence": 0.0
+      },
+      {
+        "japanese": "予定",
+        "reading": "よてい",
+        "meaning": "rencana",
+        "legacyWordId": "seed-0234",
+        "linkStatus": "matched",
+        "canonicalWordId": "seed-0234",
+        "matchMethod": "exact_normalized_headword",
+        "matchConfidence": 1.0
+      },
+      {
+        "japanese": "確認する",
+        "reading": "かくにんする",
+        "meaning": "memeriksa",
+        "legacyWordId": "seed-0513",
+        "linkStatus": "matched",
+        "canonicalWordId": "seed-0513",
+        "matchMethod": "exact_normalized_headword",
+        "matchConfidence": 1.0
+      }
+    ],
+    "grammarPoints": [],
+    "questions": [
+      {
+        "id": "legacy-q-r-n4-2",
+        "type": "multiple_choice",
+        "prompt": "会社に着いたのは予定よりどうなりましたか。",
+        "options": [
+          "十五分早かった",
+          "予定どおりだった",
+          "十五分遅かった",
+          "一時間遅かった"
+        ],
+        "answerIndex": 2,
+        "explanation": "Teks menyebut 予定より十五分遅くなりました。",
+        "evidence": "",
+        "difficulty": 3
+      }
+    ],
+    "sourceType": "legacy_v10",
+    "verificationStatus": "unreviewed",
+    "contentVersion": "10.0.0",
+    "createdAt": null,
+    "updatedAt": null,
+    "legacy": true,
+    "furiganaTokens": [
+      {
+        "text": "今朝",
+        "reading": "けさ"
+      },
+      {
+        "text": "は",
+        "reading": "は"
+      },
+      {
+        "text": "雨",
+        "reading": "あめ"
+      },
+      {
+        "text": "が",
+        "reading": "が"
+      },
+      {
+        "text": "強かった",
+        "reading": null
+      },
+      {
+        "text": "ので",
+        "reading": "ので"
+      },
+      {
+        "text": "、",
+        "reading": null
+      },
+      {
+        "text": "いつもより",
+        "reading": "いつもより"
+      },
+      {
+        "text": "早く",
+        "reading": "はやく"
+      },
+      {
+        "text": "家",
+        "reading": "いえ"
+      },
+      {
+        "text": "を",
+        "reading": "を"
+      },
+      {
+        "text": "出ました。",
+        "reading": null
+      },
+      {
+        "text": "駅",
+        "reading": "えき"
+      },
+      {
+        "text": "まで",
+        "reading": "まで"
+      },
+      {
+        "text": "歩く",
+        "reading": "あるく"
+      },
+      {
+        "text": "と",
+        "reading": "と"
+      },
+      {
+        "text": "時間",
+        "reading": "じかん"
+      },
+      {
+        "text": "が",
+        "reading": "が"
+      },
+      {
+        "text": "かかる",
+        "reading": "かかる"
+      },
+      {
+        "text": "と",
+        "reading": "と"
+      },
+      {
+        "text": "思い、",
+        "reading": null
+      },
+      {
+        "text": "バス",
+        "reading": "ばす"
+      },
+      {
+        "text": "に",
+        "reading": "に"
+      },
+      {
+        "text": "乗りました。",
+        "reading": null
+      },
+      {
+        "text": "しかし",
+        "reading": "しかし"
+      },
+      {
+        "text": "、",
+        "reading": null
+      },
+      {
+        "text": "道",
+        "reading": "みち"
+      },
+      {
+        "text": "が",
+        "reading": "が"
+      },
+      {
+        "text": "混ん",
+        "reading": null
+      },
+      {
+        "text": "で",
+        "reading": "で"
+      },
+      {
+        "text": "いたため、",
+        "reading": null
+      },
+      {
+        "text": "会社",
+        "reading": "かいしゃ"
+      },
+      {
+        "text": "に",
+        "reading": "に"
+      },
+      {
+        "text": "着いた",
+        "reading": null
+      },
+      {
+        "text": "の",
+        "reading": "の"
+      },
+      {
+        "text": "は",
+        "reading": "は"
+      },
+      {
+        "text": "予定",
+        "reading": "よてい"
+      },
+      {
+        "text": "より",
+        "reading": "より"
+      },
+      {
+        "text": "十",
+        "reading": "じゅう"
+      },
+      {
+        "text": "五",
+        "reading": "ご"
+      },
+      {
+        "text": "分",
+        "reading": "ふん"
+      },
+      {
+        "text": "遅くなりました。",
+        "reading": null
+      },
+      {
+        "text": "明日",
+        "reading": "あした"
+      },
+      {
+        "text": "は",
+        "reading": "は"
+      },
+      {
+        "text": "天気予報",
+        "reading": "てんきよほう"
+      },
+      {
+        "text": "を",
+        "reading": "を"
+      },
+      {
+        "text": "確認",
+        "reading": "かくにん"
+      },
+      {
+        "text": "して、",
+        "reading": null
+      },
+      {
+        "text": "必要な",
+        "reading": "ひつような"
+      },
+      {
+        "text": "ら",
+        "reading": null
+      },
+      {
+        "text": "も",
+        "reading": "も"
+      },
+      {
+        "text": "っ",
+        "reading": null
+      },
+      {
+        "text": "と",
+        "reading": "と"
+      },
+      {
+        "text": "早く",
+        "reading": "はやく"
+      },
+      {
+        "text": "出よう",
+        "reading": null
+      },
+      {
+        "text": "と",
+        "reading": "と"
+      },
+      {
+        "text": "思います。",
+        "reading": null
+      }
+    ],
+    "furiganaAudit": {
+      "kanjiChars": 37,
+      "annotatedKanjiChars": 28,
+      "coverage": 0.7568,
+      "unresolvedTokens": [
+        "強かった",
+        "出ました。",
+        "思い、",
+        "乗りました。",
+        "混ん",
+        "着いた",
+        "遅くなりました。",
+        "出よう",
+        "思います。"
+      ]
+    },
+    "schemaVersion": 19,
+    "contentReviewStatus": "unreviewed",
+    "vocabularyLinkAudit": {
+      "total": 5,
+      "matched": 3,
+      "needsReview": 0,
+      "unmatched": 2
+    }
+  },
+  {
+    "id": "legacy-r-n4-3",
+    "title": "新しい習慣",
+    "level": "N4",
+    "topic": "bacaan lama V10",
+    "genre": "narasi",
+    "difficulty": 3,
+    "estimatedMinutes": 1,
+    "japaneseText": "日本語を勉強し始めてから、毎晩寝る前に十五分だけ本を読むようにしています。最初は知らない漢字が多くて大変でしたが、同じ言葉が何度も出てくるので、少しずつ読めるようになりました。分からない言葉はすぐに全部調べるのではなく、まず文全体の意味を考えます。",
+    "indonesianTranslation": "Sejak mulai belajar bahasa Jepang, saya membiasakan diri membaca buku selama lima belas menit setiap malam sebelum tidur. Pada awalnya banyak kanji yang tidak saya kenal dan terasa sulit, tetapi kata-kata yang sama muncul berulang kali sehingga sedikit demi sedikit saya menjadi mampu membaca. Untuk kata yang tidak dipahami, saya tidak langsung mencari semuanya; saya terlebih dahulu memikirkan makna keseluruhan kalimat.",
+    "furiganaText": null,
+    "vocabulary": [
+      {
+        "japanese": "習慣",
+        "reading": "しゅうかん",
+        "meaning": "kebiasaan",
+        "legacyWordId": "seed-0532",
+        "linkStatus": "matched",
+        "canonicalWordId": "seed-0532",
+        "matchMethod": "exact_normalized_headword",
+        "matchConfidence": 1.0
+      },
+      {
+        "japanese": "最初",
+        "reading": "さいしょ",
+        "meaning": "awalnya",
+        "legacyWordId": null,
+        "linkStatus": "unmatched",
+        "canonicalWordId": null,
+        "matchMethod": null,
+        "matchConfidence": 0.0
+      },
+      {
+        "japanese": "何度も",
+        "reading": "なんども",
+        "meaning": "berulang kali",
+        "legacyWordId": null,
+        "linkStatus": "unmatched",
+        "canonicalWordId": null,
+        "matchMethod": null,
+        "matchConfidence": 0.0
+      },
+      {
+        "japanese": "少しずつ",
+        "reading": "すこしずつ",
+        "meaning": "sedikit demi sedikit",
+        "legacyWordId": "seed-1031",
+        "linkStatus": "matched",
+        "canonicalWordId": "seed-1031",
+        "matchMethod": "exact_normalized_headword",
+        "matchConfidence": 1.0
+      },
+      {
+        "japanese": "文全体",
+        "reading": "ぶんぜんたい",
+        "meaning": "keseluruhan kalimat",
+        "legacyWordId": null,
+        "linkStatus": "unmatched",
+        "canonicalWordId": null,
+        "matchMethod": null,
+        "matchConfidence": 0.0
+      }
+    ],
+    "grammarPoints": [],
+    "questions": [
+      {
+        "id": "legacy-q-r-n4-3",
+        "type": "multiple_choice",
+        "prompt": "分からない言葉があるとき、筆者はまず何をしますか。",
+        "options": [
+          "全部すぐに調べる",
+          "文全体の意味を考える",
+          "勉強をやめる",
+          "漢字だけを読む"
+        ],
+        "answerIndex": 1,
+        "explanation": "Kalimat terakhir menyatakan まず文全体の意味を考えます。",
+        "evidence": "",
+        "difficulty": 3
+      }
+    ],
+    "sourceType": "legacy_v10",
+    "verificationStatus": "unreviewed",
+    "contentVersion": "10.0.0",
+    "createdAt": null,
+    "updatedAt": null,
+    "legacy": true,
+    "furiganaTokens": [
+      {
+        "text": "日本語",
+        "reading": "にほんご"
+      },
+      {
+        "text": "を",
+        "reading": "を"
+      },
+      {
+        "text": "勉強",
+        "reading": "べんきょう"
+      },
+      {
+        "text": "し始めて",
+        "reading": null
+      },
+      {
+        "text": "から",
+        "reading": "から"
+      },
+      {
+        "text": "、",
+        "reading": null
+      },
+      {
+        "text": "毎晩",
+        "reading": "まいばん"
+      },
+      {
+        "text": "寝る",
+        "reading": "ねる"
+      },
+      {
+        "text": "前",
+        "reading": "まえ"
+      },
+      {
+        "text": "に",
+        "reading": "に"
+      },
+      {
+        "text": "十",
+        "reading": "じゅう"
+      },
+      {
+        "text": "五",
+        "reading": "ご"
+      },
+      {
+        "text": "分",
+        "reading": "ふん"
+      },
+      {
+        "text": "だけ",
+        "reading": "だけ"
+      },
+      {
+        "text": "本",
+        "reading": "ほん"
+      },
+      {
+        "text": "を",
+        "reading": "を"
+      },
+      {
+        "text": "読む",
+        "reading": "よむ"
+      },
+      {
+        "text": "よう",
+        "reading": null
+      },
+      {
+        "text": "に",
+        "reading": "に"
+      },
+      {
+        "text": "しています。",
+        "reading": null
+      },
+      {
+        "text": "最初",
+        "reading": "さいしょ"
+      },
+      {
+        "text": "は",
+        "reading": "は"
+      },
+      {
+        "text": "知らない",
+        "reading": null
+      },
+      {
+        "text": "漢字",
+        "reading": "かんじ"
+      },
+      {
+        "text": "が",
+        "reading": "が"
+      },
+      {
+        "text": "多くて",
+        "reading": null
+      },
+      {
+        "text": "大変",
+        "reading": "たいへん"
+      },
+      {
+        "text": "で",
+        "reading": "で"
+      },
+      {
+        "text": "した",
+        "reading": null
+      },
+      {
+        "text": "が",
+        "reading": "が"
+      },
+      {
+        "text": "、",
+        "reading": null
+      },
+      {
+        "text": "同じ",
+        "reading": "おなじ"
+      },
+      {
+        "text": "言葉",
+        "reading": "ことば"
+      },
+      {
+        "text": "が",
+        "reading": "が"
+      },
+      {
+        "text": "何度も",
+        "reading": "なんども"
+      },
+      {
+        "text": "出てくる",
+        "reading": null
+      },
+      {
+        "text": "ので",
+        "reading": "ので"
+      },
+      {
+        "text": "、",
+        "reading": null
+      },
+      {
+        "text": "少しずつ",
+        "reading": "すこしずつ"
+      },
+      {
+        "text": "読めるよう",
+        "reading": null
+      },
+      {
+        "text": "に",
+        "reading": "に"
+      },
+      {
+        "text": "なりました。",
+        "reading": null
+      },
+      {
+        "text": "分からない",
+        "reading": "わからない"
+      },
+      {
+        "text": "言葉",
+        "reading": "ことば"
+      },
+      {
+        "text": "は",
+        "reading": "は"
+      },
+      {
+        "text": "すぐ",
+        "reading": "すぐ"
+      },
+      {
+        "text": "に",
+        "reading": "に"
+      },
+      {
+        "text": "全部",
+        "reading": null
+      },
+      {
+        "text": "調べる",
+        "reading": "しらべる"
+      },
+      {
+        "text": "ので",
+        "reading": "ので"
+      },
+      {
+        "text": "は",
+        "reading": "は"
+      },
+      {
+        "text": "なく、",
+        "reading": null
+      },
+      {
+        "text": "まず",
+        "reading": "まず"
+      },
+      {
+        "text": "文全体",
+        "reading": "ぶんぜんたい"
+      },
+      {
+        "text": "の",
+        "reading": "の"
+      },
+      {
+        "text": "意味",
+        "reading": "いみ"
+      },
+      {
+        "text": "を",
+        "reading": "を"
+      },
+      {
+        "text": "考えます。",
+        "reading": null
+      }
+    ],
+    "furiganaAudit": {
+      "kanjiChars": 43,
+      "annotatedKanjiChars": 35,
+      "coverage": 0.814,
+      "unresolvedTokens": [
+        "し始めて",
+        "知らない",
+        "多くて",
+        "出てくる",
+        "読めるよう",
+        "全部",
+        "考えます。"
+      ]
+    },
+    "schemaVersion": 19,
+    "contentReviewStatus": "unreviewed",
+    "vocabularyLinkAudit": {
+      "total": 5,
+      "matched": 2,
+      "needsReview": 0,
+      "unmatched": 3
+    }
+  }
+]

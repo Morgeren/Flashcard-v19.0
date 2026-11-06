@@ -1,0 +1,38 @@
+{
+  "app": "Nihongo Study Deck",
+  "fromVersion": "18.7",
+  "toVersion": "19.0.0-foundation",
+  "migrationStrategy": "Compatibility-first; legacy localStorage names and record shape are retained. No forced IndexedDB conversion and no destructive migration are performed in this foundation build.",
+  "storageKeysRetained": [
+    "jvfc_progress_v1",
+    "jvfc_imported_v1",
+    "jvfc_session_v1",
+    "jvfc_daily_v1",
+    "jvfc_prefs_v4",
+    "jvfc_quiz_history_v4",
+    "jvfc_skill_progress_v3",
+    "jvfc_daily_goal_v3",
+    "nihongoStudyDeckV11ReadingState",
+    "nihongoStudyDeckV11UserReadings",
+    "nihongoStudyDeckV11AiEndpoint",
+    "nihongoStudyDeckV13TutorState",
+    "nihongoStudyDeckV186State"
+  ],
+  "legacyKeyMigrationSupport": "Existing V18.7 migration module and its source aliases remain in place. No legacy key is explicitly deleted by V19 modules.",
+  "userDataDeletion": false,
+  "localStorageClearCallAdded": false,
+  "indexedDbMigration": "Not performed. Existing app state remains in the legacy stores to avoid an untested schema conversion.",
+  "backupRecommendation": "Export a full application backup before updating the installed PWA. Test the update against a copied browser profile before relying on it for the only copy of study progress.",
+  "verification": {
+    "staticSourceCompatibilityReview": "PASS",
+    "destructiveMigrationScan": "PASS",
+    "actualBrowserProfileMigration": "NOT TESTED",
+    "restoreFromRealUserBackup": "NOT TESTED",
+    "rollbackInInstalledPwa": "NOT TESTED"
+  },
+  "notes": [
+    "V19 keeps the old localStorage storage keys and existing app-state format; it does not migrate user data to IndexedDB in this release.",
+    "Data continuity is expected when the new package is served from the same origin and scope, but that behavior has not been verified against a real browser profile in this build environment.",
+    "Do not delete the old app/browser data when upgrading. Keep an exported backup until the new version has been manually verified."
+  ]
+}
